@@ -1,0 +1,17 @@
+name: Tester
+schemaVersion: 1
+workflows:
+    tarfiles:
+        type:
+            language: wdl
+            version: 1.0
+        sourceURL: workflows/tarfiles
+data:
+  - location: s3://human-pangenomics
+    readOnly: true
+contexts:
+    ctx1:
+        requestSpotInstances: true
+        engines:
+            - type: wdl
+              engine: cromwell

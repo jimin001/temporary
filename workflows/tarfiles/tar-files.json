@@ -1,0 +1,5 @@
+{
+  "tester_tar.tar_files": ["s3://jimin-agc/input_fast5.tar.gz"],
+  "tester_tar.tarFiles.outname": "tester_tar_output"
+}
+
