@@ -5,14 +5,14 @@ workflow tarfiles {
 
 	# takes in tar files
 	input {
-		File tar_file
+		File tarFile
 		String dockerImage = "tpesout/megalodon:latest"
 	}
 	
 
 	call unzipFile {
 		input:
-			tarFile=file,
+			tarFile=tarFile,
 			dockerImage = dockerImage
 	}
 
